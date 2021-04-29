@@ -1,4 +1,4 @@
-body{
+*{
 	font-family: Poppins;
 }
 /*--------------------------------------------------------------
@@ -54,7 +54,6 @@ body{
 	/*margin-right: 20px;*/
 	transition: 0.3s;
 	font-size: 18px;
-	font-family: Poppins;
 }
 
 .navv{
@@ -266,7 +265,6 @@ body{
 	height: 114px;
 	left: 0;
 	top: 180px;
-	font-family: Poppins;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 38px;
@@ -281,7 +279,6 @@ body{
 	height: 60px;
 	left: 120px;
 	top: 300px;
-	font-family: Poppins;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 20px;
@@ -298,7 +295,6 @@ body{
 	right: 140px;
 	text-align: right;
 	top: 180px;
-	font-family: Poppins;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 38px;
@@ -314,7 +310,6 @@ body{
 	right: 140px;
 	text-align: right;
 	top: 250px;
-	font-family: Poppins;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 20px;
@@ -350,246 +345,138 @@ body{
 
 
 /*	Image Main About Us TOP	*/
+.card-overlay-top:after {
+    content:'';
+    position:absolute;
+    width:95%; height:100%;
+    left:0;
+    margin-left: 14px;
+    background:rgba(0,0,0,0.6);
+    opacity:0;
+    border-radius: 100px 0px;
+    /*transition: all 0.5s;*/
+    /*-webkit-transition: all 0.5s;*/
+}
+.card-overlay-top:after {
+    opacity:1;
+}
+
+.card-overlay-bottom:after {
+    content:'';
+    position:absolute;
+    width:95%; height:100%;
+    left:0;
+    margin-left: 14px;
+    background:rgba(0,0,0,0.6);
+    opacity:0;
+    border-radius: 0px 100px;
+    /*transition: all 0.5s;*/
+    /*-webkit-transition: all 0.5s;*/
+}
+.card-overlay-bottom:after {
+    opacity:1;
+}
+
+.overlay-news:after {
+    content:'';
+    position:absolute;
+    width:95.5%; 
+    height:95.5%;
+    left:0;
+    margin-top: 30px;
+    margin-left: 15px;
+    background:rgba(0,0,0,0.6);
+    opacity:0;
+    border-radius: 15px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.overlay-news:after {
+    opacity:1;
+}
+
 .about{
 	margin-bottom: 150px;
 }
 .img-about{
-	width: 110%;
-	background: linear-gradient(180deg, rgba(0, 0, 0, 0.11) 0%, rgba(0, 0, 0, 0.75) 100%);
+	width: 100%;
 	border-radius: 100px 0px;
 }
-
-.about-us h2{
-	position: absolute;
-	width: 432px;
-	height: 144px;
-	top: 100px;
-	left: 100px;
-	font-family: Poppins;
-	font-style: normal;
-	font-weight: 600;
-	font-size: 48px;
-	line-height: 72px;
-	color: #000D30;
-}
-
-.about-us p{
-	position: absolute;
-	width: 499px;
-	height: 225px;
-	left: 100px;
-	top: 250px;
-	font-family: Poppins;
-	font-style: normal;
-	font-weight: 300;
-	font-size: 24px;
-	line-height: 36px;
-	text-align: justify;
-	color: #3D3D3D;
-}
-
-.about-us a{
-	position: relative;
-	width: 111px;
-	height: 36px;
-	left: 90px;
-	top: 450px;
-	font-family: Poppins;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 24px;
-	line-height: 36px;
-	color: #000D30;
-}
-
-.about-us a:hover{
-	text-decoration: none;
+.img-about-bottom{
+	width: 100%;
+	border-radius: 0px 100px;
 }
 
 /*	About Us Bottom 	*/
 
-
 .about-us-bottom h2{
 	position: absolute;
-	width: 432px;
-	height: 144px;
-	top: 100px;
-	/*left: 0px;*/
-	font-family: Poppins;
-	font-style: normal;
-	font-weight: 600;
 	font-size: 48px;
-	line-height: 72px;
+	font-weight: 600;
+	margin-top: 100px;
 	color: #000D30;
 }
 
 .about-us-bottom p{
 	position: absolute;
-	width: 499px;
-	height: 225px;
-	/*left: 100px;*/
-	top: 250px;
-	font-family: Poppins;
-	font-style: normal;
 	font-weight: 300;
 	font-size: 24px;
-	line-height: 36px;
 	text-align: justify;
+	margin-top: 230px;
 	color: #3D3D3D;
 }
 
 .about-us-bottom a{
-	position: relative;
-	width: 111px;
-	height: 36px;
-	/*left: 90px;*/
-	top: 500px;
-	font-family: Poppins;
-	font-style: normal;
+	position: absolute;
 	font-weight: 500;
 	font-size: 24px;
-	line-height: 36px;
 	color: #000D30;
+	margin-top: 430px;
 }
 
 .about-us-bottom a:hover{
 	text-decoration: none;
 }
+/*	About Us Top 	*/
 
-.card-overlay{
-	position: relative;
-}
-.card-overlay:after {
-	content:'';
-	position:absolute;
-	top:0px;
-	width:104%;
-	border-radius: 100px 0px;
-	height:100%;
-	background: rgba(0, 0, 0, 0.5);
+.about-us-top h2{
+	position: absolute;
+	font-size: 48px;
+	font-weight: 600;
+	margin-top: 100px;
+	color: #000D30;
 }
 
-.card-overlay-bottom{
-	position: relative;
+.about-us-top p{
+	position: absolute;
+	font-weight: 300;
+	font-size: 24px;
+	text-align: justify;
+	margin-top: 230px;
+	color: #3D3D3D;
 }
-.card-overlay-bottom:after {
-	content:'';
-	position:absolute;
-	/*left:0px*/
-	top:0px;
-	width:114%;
-	border-radius: 0px 100px;
-	height:100%;
-	background: rgba(0, 0, 0, 0.5);
+
+.about-us-top a{
+	position: absolute;
+	font-weight: 500;
+	font-size: 24px;
+	color: #000D30;
+	margin-top: 430px;
 }
+
+.about-us-top a:hover{
+	text-decoration: none;
+}
+
+
 
 /*--------------------------------------------------------------
 # Majors
 --------------------------------------------------------------*/
-.section-bg {
-	margin-bottom: 50px;
-	background-color: #000D30;
+.title-majors{
+	border-right: 2px solid white;
+	padding-right: 205px;
 }
-.services .icon-box {
-	padding: 20px;
-	margin-right: 60px;
-	margin-left: 120px;
-	margin-top: 5px;
-	margin-bottom: 60px;	
-	background: #fff;
-	box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
-	transition: all 0.3s ease-in-out;
-	border-radius: 100%;
-	text-align: center;
-	border-bottom: 3px solid #fff;
-}
-
-.p-infor{
-	position: absolute;
-	width: 221.92px;
-	height: 28px;
-	left: 70px;
-	top: 120px;
-	font-family: Poppins;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 18px;
-	line-height: 27px;
-	color: #FFFFFF;
-}
-.p-civil{
-	position: absolute;
-	width: 221.92px;
-	height: 28px;
-	left: 670px;
-	top: 120px;
-	font-family: Poppins;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 18px;
-	line-height: 27px;
-	color: #FFFFFF;
-}
-.p-mecha{
-	position: absolute;
-	width: 221.92px;
-	height: 28px;
-	left: 360px;
-	top: 120px;
-	font-family: Poppins;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 18px;
-	line-height: 27px;
-	color: #FFFFFF;
-}
-
-.section-bg a{
-	position: relative;
-	width: 120px;
-	height: 27px;
-	left: 600px;
-	top: 100px;
-	font-family: Poppins;
-	font-style: normal;
-	font-weight: 300;
-	font-size: 18px;
-	line-height: 27px;
-	color: #FFFFFF;
-}
-.section-bg a:hover{
-	text-decoration: none;
-	color: #00CA99;
-}
-
-.section-title{
-	color: white;
-}
-
-.section-title h2{
-	position: relative;
-	width: 153.26px;
-	height: 170px;
-	top: 60px;
-	font-family: Poppins;
-	font-style: normal;
-	font-weight: 600;
-	font-size: 24px;
-	line-height: 36px;
-
-	color: #FFFFFF;
-}
-
-.services .title {
-	font-weight: 700;
-	margin-bottom: 15px;
-	font-size: 18px;
-}
-
-.services .title a {
-	color: white;
-}
-
 .services .description {
 	font-size: 15px;
 	line-height: 28px;
@@ -599,23 +486,40 @@ body{
 .vertikal-garis{
 	position: absolute;
 	width: 110px;
-	height: 0px;
-	left: 282.59px;
-	top: 2390px;
-	border: 1px solid #ABABAB;
+	margin-bottom: 10px;
+	margin-left: 200px;
+	border: 2px solid #ABABAB;
 	transform: rotate(90deg);
 }
 
-.circle{
-	margin-left: 40px;
-	margin-top: 50px;
+
+/**/
+.jurusan{
+	height: auto;
+	/*width: auto !important;*/
+	padding: 30px 0 20px 0;
+	background: #000D30;
+	color: white;
+}
+
+.see-more a{
+	color: white;
+	/*margin-left: 80px;*/
+}
+
+.see-more a:hover{
+	text-decoration: none;
+	color: #00CA99;
+}
+
+.text-1{
+	border-right: thick solid #ff0000;
+	
 }
 
 /*	----------- 	Done ------------- */
 .see-more{
-	font-family: Poppins;
 	font-size: 20px;
-	font-style: normal;
 	font-weight: 400;
 	line-height: 30px;
 	letter-spacing: 0em;
@@ -635,6 +539,7 @@ body{
 	height: 270px;
 	margin-top: 30px;
 	margin-bottom: 50px;
+	border-radius: 15px;
 }
 
 .parent-img{
@@ -652,5 +557,37 @@ body{
 	top: 200px;
 	color: white;
 	width: 300px;
+}
+
+ /*  FOOTER  */
+
+.footer{
+  margin-top: 130px;
+  bottom: 0 !important;
+}
+
+.bg-navy{
+  background: #000D30;
+}
+
+.footer-title{
+  width: 300px;
+  margin-top: 90px;
+}
+
+.copyright{
+  margin-top: 70px;
+}
+
+.link-footer{
+  margin-top: 50px;
+}
+
+.href{
+  padding: 3px 0 3px 0;
+} 
+
+a:hover{
+  text-decoration: none;
 }
 
